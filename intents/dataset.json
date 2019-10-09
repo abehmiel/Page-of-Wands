@@ -1,0 +1,319 @@
+{
+  "entities": {
+    "place": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [
+            "99163",
+            "pullman wa"
+          ],
+          "value": "pullman"
+        },
+        {
+          "synonyms": [
+            "83843",
+            "moscow id"
+          ],
+          "value": "moscow"
+        },
+        {
+          "synonyms": [
+            "12180",
+            "troy ny"
+          ],
+          "value": "troy"
+        },
+        {
+          "synonyms": [
+            "99208",
+            "spokane wa"
+          ],
+          "value": "spokane"
+        },
+        {
+          "synonyms": [
+            "98144",
+            "seattle wa"
+          ],
+          "value": "seattle"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "snips/datetime": {},
+    "wikiQuery": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "John Brown"
+        },
+        {
+          "synonyms": [],
+          "value": "Magic the gathering"
+        },
+        {
+          "synonyms": [],
+          "value": "Ishmael (book)"
+        },
+        {
+          "synonyms": [],
+          "value": "oyster mushroom"
+        },
+        {
+          "synonyms": [],
+          "value": "final fantasy 7"
+        },
+        {
+          "synonyms": [
+            "108 band"
+          ],
+          "value": "108"
+        },
+        {
+          "synonyms": [],
+          "value": "Louis XIV"
+        },
+        {
+          "synonyms": [],
+          "value": "madonna"
+        },
+        {
+          "synonyms": [],
+          "value": "October revolution"
+        },
+        {
+          "synonyms": [],
+          "value": "Stirling's approximation"
+        },
+        {
+          "synonyms": [],
+          "value": "support vector machine"
+        },
+        {
+          "synonyms": [],
+          "value": "401k plan"
+        },
+        {
+          "synonyms": [],
+          "value": "Rosa Luxembourg"
+        },
+        {
+          "synonyms": [],
+          "value": "Plan b drug"
+        },
+        {
+          "synonyms": [],
+          "value": "blakns 77"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "hourlyForecast": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "hourly forecast for "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "pullman"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "hourly weather "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "99163"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "forecast for "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "pullman wa"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "hourly "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "moscow"
+            },
+            {
+              "text": " forecast"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "83843"
+            },
+            {
+              "text": " hourly forecast"
+            }
+          ]
+        }
+      ]
+    },
+    "weatherConditions": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "weather forecast for "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "moscow id"
+            },
+            {
+              "text": " for "
+            },
+            {
+              "entity": "snips/datetime",
+              "slot_name": "time",
+              "text": "tomorrow at 9pm"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "snips/datetime",
+              "slot_name": "time",
+              "text": "today"
+            },
+            {
+              "text": " weather forecast "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "troy"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "weather "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "12180"
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "snips/datetime",
+              "slot_name": "time",
+              "text": "on october 1st at 10am"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "weather "
+            },
+            {
+              "entity": "snips/datetime",
+              "slot_name": "time",
+              "text": "at 8 a.m."
+            },
+            {
+              "text": " "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "troy ny"
+            }
+          ]
+        }
+      ]
+    },
+    "wikiSearch": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "wikipedia "
+            },
+            {
+              "entity": "wikiQuery",
+              "slot_name": "wikiQuery",
+              "text": "John Brown"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "wiki "
+            },
+            {
+              "entity": "wikiQuery",
+              "slot_name": "wikiQuery",
+              "text": "Magic the gathering"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "wikiQuery",
+              "slot_name": "wikiQuery",
+              "text": "Ishmael (book)"
+            },
+            {
+              "text": " wikipedia"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "wikiQuery",
+              "slot_name": "wikiQuery",
+              "text": "oyster mushroom"
+            },
+            {
+              "text": " wiki"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

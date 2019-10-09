@@ -1,0 +1,75 @@
+# hourly forecast intent
+---
+type: intent
+name: hourlyForecast
+slots:
+  - name: place
+    entity: place
+utterances:
+  - hourly forecast for [place]
+  - hourly weather [place]
+  - forecast for [place] 
+  - hourly [place] forecast 
+  - "[place] hourly forecast"
+
+# weather conditions intent
+---
+type: intent
+name: weatherConditions
+slots:
+  - name: place
+    entity: place
+  - name: time
+    entity: snips/datetime
+utterances:
+  - weather forecast for [place] for [time]
+  - "[time] weather forecast [place]"
+  - weather [place] [time]
+  - weather [time] [place]
+
+# wikipedia intent
+---
+type: intent
+name: wikiSearch
+slots:
+  - name: wikiQuery
+    entity: wikiQuery
+utterances:
+  - wikipedia [wikiQuery]
+  - wiki [wikiQuery]
+  - "[wikiQuery] wikipedia"
+  - "[wikiQuery] wiki"
+
+# place entity
+---
+type: entity
+name: place
+automatically_extensible: yes
+values:
+  - [pullman, '99163', pullman wa]
+  - [moscow, '83843', moscow id]
+  - [troy, "12180", troy ny]
+  - [spokane, "99208", spokane wa]
+  - [seattle, "98144", seattle wa]
+
+# wikiQuery entity
+---
+type: entity
+name: wikiQuery
+automatically_extensible: yes
+values:
+  - "John Brown"
+  - "Magic the gathering"
+  - "Ishmael (book)"
+  - "oyster mushroom"
+  - "final fantasy 7"
+  - ["108", "108 band"]
+  - "Louis XIV"
+  - madonna
+  - "October revolution"
+  - "Stirling's approximation"
+  - "support vector machine"
+  - "401k plan"
+  - "Rosa Luxembourg"
+  - "Plan b drug"
+  - "blakns 77"
